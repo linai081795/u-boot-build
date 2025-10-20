@@ -25,7 +25,7 @@ jobs:
           [
             {
               "name": "rk3568-bdy-g18-pro",
-              "config": "bdy-g18-pro_defconfig",
+              "config": "bdy-g18-pro-rk3568_defconfig",
               "variant": "RK3568",
             },
           ]
