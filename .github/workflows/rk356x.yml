@@ -6,7 +6,7 @@ on:
       uboot_ref:
         description: u-boot ref
         required: true
-        default: master
+        default: rk3xxx-2025.04
         type: string
       rkbin_ref:
         description: rkbin ref
