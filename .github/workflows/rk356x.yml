@@ -60,7 +60,7 @@ jobs:
           make mrproper
           make CROSS_COMPILE=aarch64-linux-gnu- ${{ matrix.boards.config }}
           make CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
-          ls ./dts
+          # ls ./dts
 
       - name: Upload artifacts
         if: ${{ success() && steps.build.conclusion != 'skipped' }}
@@ -74,3 +74,4 @@ jobs:
             u-boot/u-boot.bin
             u-boot/u-boot.itb
             u-boot/u-boot.img
+            u-boot/arch/arm/dts/rk3568-bdy-g18-pro.dtb
