@@ -60,7 +60,7 @@ jobs:
           make mrproper
           make CROSS_COMPILE=aarch64-linux-gnu- ${{ matrix.boards.config }}
           make CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc)
-          ls ./
+          ls ./dts
 
       - name: Upload artifacts
         if: ${{ success() && steps.build.conclusion != 'skipped' }}
